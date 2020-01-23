@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/MUI-example/static/css/main.34303d28.chunk.css",
+    "main.js": "/MUI-example/static/js/main.a4f946cb.chunk.js",
+    "main.js.map": "/MUI-example/static/js/main.a4f946cb.chunk.js.map",
+    "runtime-main.js": "/MUI-example/static/js/runtime-main.16ae82a2.js",
+    "runtime-main.js.map": "/MUI-example/static/js/runtime-main.16ae82a2.js.map",
+    "static/js/2.2c796b55.chunk.js": "/MUI-example/static/js/2.2c796b55.chunk.js",
+    "static/js/2.2c796b55.chunk.js.map": "/MUI-example/static/js/2.2c796b55.chunk.js.map",
+    "index.html": "/MUI-example/index.html",
+    "precache-manifest.f1ecff28fbc3d5ca4f5f97aa3721700d.js": "/MUI-example/precache-manifest.f1ecff28fbc3d5ca4f5f97aa3721700d.js",
+    "service-worker.js": "/MUI-example/service-worker.js",
+    "static/css/main.34303d28.chunk.css.map": "/MUI-example/static/css/main.34303d28.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16ae82a2.js",
+    "static/js/2.2c796b55.chunk.js",
+    "static/css/main.34303d28.chunk.css",
+    "static/js/main.a4f946cb.chunk.js"
+  ]
+}
