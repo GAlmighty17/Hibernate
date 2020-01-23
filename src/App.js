@@ -42,14 +42,14 @@ class App extends Component {
 
 	getMessages() {
 		axios
-			.get('http://localhost:8080/RestAPI/webapi/messages')
+			.get('http://localhost:8080/webapi/messages')
 			.then(response => this.setState({ messages: response.data }));
 	}
 
 	getMessagesById = id => {
 		this.toggelopenGetId();
 		axios
-			.get(`http://localhost:8080/RestAPI/webapi/messages/${id}`)
+			.get(`http://localhost:8080/webapi/messages/${id}`)
 			.then(response =>
 				response.status === 200
 					? this.setState({
@@ -61,7 +61,7 @@ class App extends Component {
 
 	setMessage = message => {
 		axios
-			.post(`http://localhost:8080/RestAPI/webapi/messages/`, message, {
+			.post(`http://localhost:8080/webapi/messages/`, message, {
 				headers: { 'Content-Type': 'application/json' }
 			})
 			.then(response =>
@@ -73,7 +73,7 @@ class App extends Component {
 	deleteById = id => {
 		this.toggelopenDeleteMessage();
 		axios
-			.delete(`http://localhost:8080/RestAPI/webapi/messages/${id}`)
+			.delete(`http://localhost:8080/webapi/messages/${id}`)
 			.then(response =>
 				this.setState({ openError: true, response: response })
 			);
@@ -101,8 +101,8 @@ class App extends Component {
 
 		return (
 			<div className="App">
-				<Grid container className={classes.buttonGrid}>
-					<Grid item xs={3}>
+				<Grid container spacing={2} className={classes.buttonGrid}>
+					<Grid item xs={6} sm={3}>
 						<Button
 							variant="contained"
 							className={classes.button}
@@ -111,7 +111,7 @@ class App extends Component {
 							Get All message
 						</Button>
 					</Grid>
-					<Grid item xs={3}>
+					<Grid item xs={6} sm={3}>
 						<Button
 							variant="contained"
 							className={classes.button}
@@ -120,7 +120,7 @@ class App extends Component {
 							Get Message by id
 						</Button>
 					</Grid>
-					<Grid item xs={3}>
+					<Grid item xs={6} sm={3}>
 						<Button
 							variant="contained"
 							className={classes.button}
@@ -129,7 +129,7 @@ class App extends Component {
 							Create new message
 						</Button>
 					</Grid>
-					<Grid item xs={3}>
+					<Grid item xs={6} sm={3}>
 						<Button
 							variant="contained"
 							className={classes.button}

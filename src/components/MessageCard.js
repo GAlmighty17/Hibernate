@@ -34,7 +34,7 @@ class MessageCard extends Component {
             <div className={classes.root}>
 			<Grid container spacing={4} style={{textAlign: 'left'}}>
 				{messages.map(message => (
-					<Grid key={message.id} item xs={6}>
+					<Grid key={message.id} item xs={12} sm={6}>
 						<Card key={message.id} className={classes.card}>
 							<CardHeader
 								title={`${message.author} wrote`}
