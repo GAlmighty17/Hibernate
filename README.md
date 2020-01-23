@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Deployed at
 
-(https://galmighty17.github.io/MUI-example/)
+[https://galmighty17.github.io/MUI-example/](https://galmighty17.github.io/MUI-example/)
 (Backend Not deployed yet)
 
 ## Available Scripts
