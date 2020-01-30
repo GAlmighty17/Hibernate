@@ -42,14 +42,14 @@ class App extends Component {
 
 	getMessages() {
 		axios
-			.get('http://localhost:8080/webapi/messages')
+			.get('http://localhost:3000/webapi/messages')
 			.then(response => this.setState({ messages: response.data }));
 	}
 
 	getMessagesById = id => {
 		this.toggelopenGetId();
 		axios
-			.get(`http://localhost:8080/webapi/messages/${id}`)
+			.get(`http://localhost:3000/webapi/messages/${id}`)
 			.then(response =>
 				response.status === 200
 					? this.setState({
@@ -61,7 +61,7 @@ class App extends Component {
 
 	setMessage = message => {
 		axios
-			.post(`http://localhost:8080/webapi/messages/`, message, {
+			.post(`http://localhost:3000/webapi/messages/`, message, {
 				headers: { 'Content-Type': 'application/json' }
 			})
 			.then(response =>
@@ -73,7 +73,7 @@ class App extends Component {
 	deleteById = id => {
 		this.toggelopenDeleteMessage();
 		axios
-			.delete(`http://localhost:8080/webapi/messages/${id}`)
+			.delete(`http://localhost:3000/webapi/messages/${id}`)
 			.then(response =>
 				this.setState({ openError: true, response: response })
 			);
